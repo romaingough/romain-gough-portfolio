@@ -1,0 +1,110 @@
+/* Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --font-size-base: 16px;
+    --font-family-base: 'Arial', sans-serif;
+    --font-family-header: 'Georgia', serif;
+}
+
+/* Body */
+body {
+    margin: 0;
+    font-family: var(--font-family-base);
+    background-color: var(--secondary-color);
+    padding-top: 80px; /* Remplacez 80px par la hauteur de votre header */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 60%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-family-header);
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.project h2 {
+    margin: 20px;
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+
+/* Project Showcase Container */
+.project-showcase {
+    margin: 50px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 40%; /* make the card span the full width */
+  }
+  
+  .project-card h2 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .project-card p {
+    margin-bottom: 20px;
+  }
